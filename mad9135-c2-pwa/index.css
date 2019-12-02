@@ -1,0 +1,66 @@
+body {
+    background-color: hsl(240deg, 100%, 95%);
+}
+
+.content {
+    display: flex;
+    min-height: 30vh;
+}
+
+.current-weather {
+    min-width: 350px;
+    padding: 10px 30px;
+    border-right: 1px solid grey;
+}
+
+.main-info {
+    display: grid;
+    grid-template-areas: "a a" "b c" "d e";
+    
+}
+
+.city-name {
+    grid-area: a;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.weather-icon {
+    grid-area: b;
+    justify-self: center;
+    width: 50%;
+}
+
+.temperature {
+    grid-area: c;
+    justify-self: left;
+    align-self: center;
+    font-size: 2rem;
+}
+
+.temp-high {
+    grid-area: d;
+}
+
+.temp-low {
+    grid-area: e;
+}
+
+.secondary-info {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sec-info-div {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+
+.upcoming-weather {
+    width: 50%;
+}
