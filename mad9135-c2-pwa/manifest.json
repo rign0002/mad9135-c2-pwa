@@ -1,0 +1,41 @@
+{
+    "name": "Weather Around You",
+    "short_name": "Weather",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "hsl(240deg, 100%, 95%)",
+    "theme_color": "#FFE1C4",
+    "orientation": "portrait-primary",
+    "icons": [
+        {
+            "src": "/icons/hdpi.png",
+            "type": "image/png",
+            "sizes": "72x72"
+        },
+        {
+            "src": "/icons/ldpi.png",
+            "type": "image/png",
+            "sizes": "36x36"
+        },
+        {
+            "src": "/icons/mdpi.png",
+            "type": "image/png",
+            "sizes": "48x48"
+        },
+        {
+            "src": "/icons/xdpi.png",
+            "type": "image/png",
+            "sizes": "96x96"
+        },
+        {
+            "src": "/icons/xxdpi.png",
+            "type": "image/png",
+            "sizes": "144x144"
+        },
+        {
+            "src": "/icons/xxxdpi.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        }
+    ]
+}

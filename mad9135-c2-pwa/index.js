@@ -16,6 +16,11 @@ let lon
 
 function init() {
     getLocation()
+    addButtonListeners()
+}
+
+function addButtonListeners() {
+    document.getElementById('refresh').addEventListener('click', () => window.location.reload())
 }
 
 function getLocation() {
@@ -51,8 +56,8 @@ function createCurrentWeatherPage(data) {
     const currentWeather = document.querySelector('.current-weather')
     const weatherIconSrc = `http://openweathermap.org/img/w/${data.weather[0].icon}.png`
     const temperature = `${Math.round(data.main.temp) - 273}&deg;C`
-    const tempHigh = `Today's High: ${Math.round(data.main.temp_max) - 273}&deg;C`
-    const tempLow = `Today's Low: ${Math.round(data.main.temp_min) - 273}&deg;C`
+    const tempHigh = `High: ${Math.round(data.main.temp_max) - 273}&deg;C`
+    const tempLow = `Low: ${Math.round(data.main.temp_min) - 273}&deg;C`
     const humidityText = `${data.main.humidity}%`
     const visibilityText = `${Math.round(data.visibility/1000)}Km `
     const pressureText = `${data.main.pressure}hPA`
